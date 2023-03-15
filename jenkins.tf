@@ -3,7 +3,7 @@ module "jenkins_sg" {
 
   name        = "jenkins-sg"
   description = "Security group para o servidor do Jenkins Server"
-  vpc_id      = "<SUA-VPC-PROD-ID>"
+  vpc_id      = "vpc-0dfe94255e7ba335f"
 
   ingress_cidr_blocks = ["0.0.0.0/0"]
   ingress_rules       = ["http-80-tcp", "ssh-tcp"]
